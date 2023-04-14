@@ -1,0 +1,10 @@
+<launch>
+
+  <node pkg="uwb_ros" name="Uwb_controller" type="Uwb_controller" output="screen">
+    <param name="usart_port" 		type="string" 	value="/dev/uwb" />
+    <param name="baud_data" 		type="int" 	value="115200" />
+    <param name="robot_frame_id" 	type="string" 	value="base_link" />
+    <param name="publish_odom" 		type="bool" 	value="true" />
+  </node>
+
+</launch>
